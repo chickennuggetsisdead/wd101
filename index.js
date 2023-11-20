@@ -55,4 +55,11 @@ document.getElementById("formData").addEventListener("submit", function (event) 
     // Save user data to local storage
     let users = JSON.parse(localStorage.getItem("users")) || { count: 0 };
     let userKeyName = "user" + ++users.count;
-    let user
+    let user = {
+        name: userName,
+        email: userEmail,
+        password: userPassword,
+        dob: userDob,
+        terms: acceptedTerms,
+    };
+    users
