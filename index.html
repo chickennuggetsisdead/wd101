@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>WD101</title>
+    <title>User Registration</title>
 </head>
 
 <body>
@@ -14,28 +14,28 @@
         <legend>Registration Form</legend>
         <div class="container">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
         </div>
         <div class="container">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
         </div>
         <div class="container">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
         </div>
         <div class="container">
             <label for="dob">Date of Birth</label>
-            <input type="date" name="dob" id="dob">
+            <input type="date" name="dob" id="dob" required>
         </div>
         <div class="checkbox">
-            <input type="checkbox" name="agree" id="agree">
+            <input type="checkbox" name="agree" id="agree" required>
             <label for="agree">Terms and Conditions</label>
         </div>
         <button type="submit" id="submit">Submit</button>
     </form>
     <div class="userinfo">
-        <h3>Log</h3>
+        <h3>User Entries</h3>
         <table>
             <thead>
                 <tr>
@@ -43,7 +43,7 @@
                     <th>Email</th>
                     <th>Password</th>
                     <th>DoB</th>
-                    <th>Status</th>
+                    <th>Accepted Terms</th>
                 </tr>
             </thead>
             <tbody id="tableBody"></tbody>
